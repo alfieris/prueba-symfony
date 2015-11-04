@@ -1,0 +1,24 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Vista desde main{% endblock %}
+
+{% block stylesheets %}
+  <link href="{{ asset('css/main.css')}}" type="text/css" rel="stylesheet"
+{% endblock %}
+
+{% block body %}
+  <div id="pagina" class="cfix">
+      <div id="contenido">
+          {% block contenido %}
+              Mi Contenido
+          {% endblock %}
+
+          {# {{ include('dmuelaalumnosBundle:Default:ejemplostwig.html.twig') }} #}
+      </div>
+      <div id="sidebar">
+          {% block sidebar %}
+            <img src="{{ asset('images/logo.jpg')}}"/>
+          {% endblock %}
+      </div>
+  </div>
+{% endblock %}

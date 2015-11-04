@@ -1,0 +1,19 @@
+dmuelaalumnos_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: dmuelaalumnosBundle:Default:index }
+
+dmuelaalumnos_alumnos:
+    path:     /alumnos
+    defaults: { _controller: dmuelaalumnosBundle:Default:alumnos }
+
+dmuelaalumnos_alumno:
+    path:     /alumno/{id}
+    defaults: { _controller: dmuelaalumnosBundle:Default:alumno }
+
+dmuelaalumnos_nuevo:
+    path:     /nuevo
+    defaults: { _controller: dmuelaalumnosBundle:Default:nuevo }
+
+dmuelaalumnos_ejemplos:
+    path:     /ejemplos
+    defaults: { _controller: dmuelaalumnosBundle:Default:ejemplos }

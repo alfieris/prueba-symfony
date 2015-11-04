@@ -1,0 +1,14 @@
+{% extends 'dmuelaalumnosBundle::main.html.twig' %}
+
+{% block title %}Vista desde Alumnos{% endblock %}
+{% block contenido %}
+<h1>Listado de Alumnos</h1>
+{% for alumno in alumnos %}
+  <a href="{{url('dmuelaalumnos_alumno',{'id':alumno.id})}}"
+  class="fila {{cycle(["par","impar"],loop.index)}}">{{ alumno.id}} - {{ alumno.nombre}}</a>
+{% endfor %}
+{% endblock %}
+{% block sidebar %}
+  {{ parent() }}
+  Esto reemplazaria lo que hay en sidebar
+{% endblock %}
