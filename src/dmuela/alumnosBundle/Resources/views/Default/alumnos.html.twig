@@ -2,7 +2,7 @@
 
 {% block title %}Vista desde Alumnos{% endblock %}
 {% block contenido %}
-<h1>Listado de Alumnos</h1>
+<h1>Listado de Alumnos 2</h1>
 {% for alumno in alumnos %}
   <a href="{{url('dmuelaalumnos_alumno',{'id':alumno.id})}}"
   class="fila {{cycle(["par","impar"],loop.index)}}">{{ alumno.id}} - {{ alumno.nombre}}</a>
